@@ -1,2 +1,2 @@
 #!/bin/bash
-P=${PATH//[^:]} | echo $((${#P}+1))
+export A=${PATH//[^:]} |  echo $A | tr ':' '\n' | wc -l 
